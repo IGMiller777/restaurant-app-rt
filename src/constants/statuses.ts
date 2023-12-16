@@ -4,4 +4,5 @@ export const REQUEST_STATUSES = {
   success: "success",
   failed: "failed",
   earlyLoaded: "earlyLoaded",
+  loading: "loading",
 };

@@ -1,4 +1,11 @@
-export const normalizedRestaurants = [
+import {
+  INormalizedDishes,
+  INormalizedRestaurants,
+  INormalizedReviews,
+  INormalizedUsers
+} from "./normalized-fixtures.interface";
+
+export const normalizedRestaurants: INormalizedRestaurants[] = [
   {
     id: "a757a0e9-03c1-4a2a-b384-8ac21dbe2fb2",
     name: "Dishoom",
@@ -49,7 +56,7 @@ export const normalizedRestaurants = [
   },
 ];
 
-export const normalizedDishes = [
+export const normalizedDishes: INormalizedDishes[] = [
   {
     id: "d75f762a-eadd-49be-8918-ed0daa8dd024",
     name: "Chicken tikka masala",
@@ -112,7 +119,7 @@ export const normalizedDishes = [
   },
 ];
 
-export const normalizedReviews = [
+export const normalizedReviews: INormalizedReviews[] = [
   {
     id: "5909796d-5030-4e36-adec-68b8f9ec2d96",
     userId: "a304959a-76c0-4b34-954a-b38dbf310360",
@@ -163,7 +170,7 @@ export const normalizedReviews = [
   },
 ];
 
-export const normalizedUsers = [
+export const normalizedUsers: INormalizedUsers[] = [
   {
     id: "a304959a-76c0-4b34-954a-b38dbf310360",
     name: "Antony",
