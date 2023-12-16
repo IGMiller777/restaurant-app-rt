@@ -1,5 +1,5 @@
 export const Review = () => {
     return (
-        <div></div>
+        <div>Review</div>
     );
 };
