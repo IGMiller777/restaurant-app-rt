@@ -11,6 +11,7 @@ export type AppState = {
     user: UserState;
     dish: DishState;
     restaurant: RestaurantsState;
+    cart: any; //TODO -
 }
 
 type StateEntitiesCommon<T> = {

@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { selectUserIds } from "../selectors";
 import { REQUEST_STATUSES } from "../../../../constants/statuses";
 
-export const loadUserIfNotExist = createAsyncThunk(
+export const loadUserIfNotExist: any = createAsyncThunk(
     'users/loadUserIfNotExist',
     async (_, {getState, rejectWithValue}) => {
         const state = getState();

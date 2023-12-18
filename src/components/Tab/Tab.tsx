@@ -8,7 +8,6 @@ interface TabProps {
     className?: string; // Making className optional
 }
 
-
 export const Tab: React.FC<TabProps> = ({to, title, className}) => {
     return (
         <NavLink to={to}

@@ -4,9 +4,9 @@ import { selectRestaurantMenuById } from "../../restaurant/selectors";
 import { selectDishIds } from "../selectors";
 import { AppState } from "../../../types/store.type";
 
-export const loadDishesByRestaurantId = createAsyncThunk(
+export const loadDishesByRestaurantId: any = createAsyncThunk(
     `dish/loadDishesByRestaurantId`,
-    async (restaurantId, { getState, rejectWithValue }) => {
+    async (restaurantId: string, { getState, rejectWithValue }) => {
         const state = getState() as AppState;
         const restaurantDishIds = selectRestaurantMenuById(state, { restaurantId } as any) as any;
         const loadedDishIds = selectDishIds(state as any);

@@ -1,13 +1,13 @@
 import styles from './styles.module.css';
 import { Tab } from '../Tab/Tab';
 
-interface Tab {
+interface ITab {
     id: string;
     title: string;
 }
 
 interface TabsProps {
-    tabs: Tab[];
+    tabs: ITab[];
 }
 
 

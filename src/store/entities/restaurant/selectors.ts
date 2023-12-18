@@ -34,7 +34,7 @@ export const createSelectRestaurantsFilteredByName = () =>
     );
 
 
-export const selectRestaurantMenuById = (state: AppState, { restaurantId }: {restaurantId: number}) =>
+export const selectRestaurantMenuById = (state: AppState, { restaurantId }: {restaurantId: string}) =>
     selectRestaurantById(state, { restaurantId })?.menu;
 
 export const selectRestaurantReviewsById = (state: AppState, { restaurantId }: any) =>
@@ -49,7 +49,7 @@ export const selectIsRestaurantLoading = (state: AppState) =>
 export const selectIsRestaurantLoaded = (state: AppState) =>
     selectRestaurantLoadingStatus(state) === REQUEST_STATUSES.success;
 
-export const selectRestaurantIdsFilteredByDishId = (state: AppState, { dishId }: {dishId: number}) =>
+export const selectRestaurantIdsFilteredByDishId = (state: AppState, { dishId }: {dishId: string}) =>
     selectRestaurantIds(state).filter((restaurantId) => {
         const restaurant = selectRestaurantById(state, { restaurantId }) as any;
 

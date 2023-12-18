@@ -3,7 +3,7 @@ import { selectRestaurantIds } from "../selectors";
 import { REQUEST_STATUSES } from "../../../../constants/statuses";
 import { AppState } from "../../../types/store.type";
 
-export const loadRestaurantIfNotExist = createAsyncThunk(
+export const loadRestaurantIfNotExist: any = createAsyncThunk(
     "restaurant",
     async (_, { getState, rejectWithValue }) => {
         const restaurantIds = selectRestaurantIds(getState() as AppState);

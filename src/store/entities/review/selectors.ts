@@ -8,8 +8,8 @@ export const selectReviews = (state: AppState) =>
 
 export const selectReviewIds = (state: AppState) => selectReviewModule(state).ids;
 
-export const selectReviewById = (state: AppState, {reviewId}: {reviewId: number}) =>
-    selectReviewModule(state).entities[reviewId];
+export const selectReviewById = (state: AppState, {reviewId}: {reviewId: string}) =>
+    selectReviewModule(state).entities[+reviewId];
 
 export const selectReviewLoadingStatus = (state: AppState) =>
     selectReviewModule(state).status;
